@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" 
+            fx:controller="com.rafaelcosmo.grupo_11.vista.JuegoController">
+    <top>
+        <VBox spacing="15" alignment="CENTER">
+            <padding>
+                <Insets top="20" right="20" bottom="10" left="20"/>
+            </padding>
+            <HBox spacing="15" alignment="CENTER">
+                <Label text="Modo:"/>
+                <ComboBox fx:id="cbModoJuego"/>
+                <Label text="Símbolo Jugador 1:"/>
+                <ComboBox fx:id="cbSimboloHumano"/>
+                <Label text="Inicia:"/>
+                <ComboBox fx:id="cbQuienInicia"/>
+            </HBox>
+            <HBox spacing="15" alignment="CENTER">
+                <Button text="Iniciar Partida" onAction="#iniciarJuego" 
+                        style="-fx-font-weight: bold; -fx-padding: 8 20;"/>
+                <Button fx:id="btnSugerir" text="Sugerir Movimiento" onAction="#sugerirMovimiento" disable="true"
+                        style="-fx-padding: 8 20;"/>
+            </HBox>
+            <Label fx:id="lblEstado" text="Configura la partida y presiona Iniciar" 
+                   style="-fx-text-fill: #555555; -fx-font-size: 14px;"/>
+        </VBox>
+    </top>
+    <center>
+        <GridPane fx:id="gridTablero" alignment="CENTER" hgap="5" vgap="5">
+            <padding>
+                <Insets bottom="20"/>
+            </padding>
+        </GridPane>
+    </center>
+</BorderPane>
