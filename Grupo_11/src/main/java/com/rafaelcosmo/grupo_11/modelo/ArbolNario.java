@@ -1,4 +1,4 @@
-package com.rafaelcosmo.modelo;
+package com.rafaelcosmo.grupo_11.modelo;
 
 public class ArbolNario<E> {
     private NodoNario<E> raiz;
@@ -15,4 +15,3 @@ public class ArbolNario<E> {
         return raiz.getHijos().isEmpty();
     }
 }
-
