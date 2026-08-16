@@ -1,4 +1,4 @@
-package com.rafaelcosmo.modelo;
+package com.rafaelcosmo.grupo_11.modelo;
 
 import java.util.Arrays;
 
@@ -42,4 +42,5 @@ public class Tablero {
         return new Tablero(this.matriz);
     }
 }
+
 

@@ -1,4 +1,4 @@
-package com.rafaelcosmo.modelo;
+package com.rafaelcosmo.grupo_11.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
